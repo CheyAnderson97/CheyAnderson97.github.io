@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Cheyenne Anderson</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1a1a1a; color: #ffffff; padding-top: 100px; }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background-color: #232323; display: flex; justify-content: space-between;
+            align-items: center; padding: 15px 40px; z-index: 1000;
+            border-bottom: 1px solid #333333;
+        }
+        .navbar .logo { color: #ffffff; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; }
+        .navbar ul { display: flex; list-style: none; align-items: center; gap: 20px; }
+        .navbar ul li a {
+            color: #cccccc; text-decoration: none; font-size: 0.9rem;
+            font-weight: 600; text-transform: uppercase; transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover { color: #ffffff; }
+
+        .btn-nav-first {
+            background-color: #cbb280; color: #232323 !important;
+            padding: 8px 18px; border-radius: 3px; font-weight: 700 !important;
+        }
+        .btn-nav-outline {
+            border: 2px solid #ffffff; padding: 8px 18px; border-radius: 3px; color: #ffffff !important;
+        }
+
+        /* About Content */
+        .about-section { padding: 40px 20px 80px 20px; background-color: #1a1a1a; }
+        .about-container { max-width: 960px; margin: 0 auto; background-color: #222222; padding: 40px; border-radius: 6px; }
+        .about-section h1 {
+            color: #cbb280; font-size: 2.2rem; border-bottom: 2px solid #cbb280;
+            padding-bottom: 10px; margin-bottom: 30px; text-transform: uppercase;
+        }
+        .about-section h2 { color: #ffffff; font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px; }
+        .about-section p { color: #dddddd; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; }
+        .about-section ul { margin-left: 20px; margin-bottom: 25px; }
+        .about-section li { color: #cccccc; line-height: 1.8; margin-bottom: 12px; }
+        .about-section strong { color: #ffffff; }
+        .back-link { display: inline-block; margin-top: 30px; color: #cbb280; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CHEYENNE ANDERSON</div>
+        <ul>
+            <li><a href="about.html" class="btn-nav-first">About Me</a></li>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html" class="btn-nav-outline">View Code</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-container">
+            <h1>About Me — Professional Self-Assessment</h1>
+            
+            <p>
+                Welcome to my ePortfolio! My journey into technology started at an early age when I built my first personal computer alongside my father at eight years old, sparking a lifelong fascination with how hardware and software intersect. Today, as a computer science student at Southern New Hampshire University[cite: 1] and working professionally as a 3D Technologist (transitioning from a background as a CT Technologist)[cite: 1], I have combined my analytical foundation in healthcare imaging with robust software engineering principles. This ePortfolio serves as a comprehensive showcase of my technical evolution, problem-solving mindset, and readiness to deliver secure, scalable, and high-performance solutions in the tech industry.
+            </p>
+
+            <h2>Program Experience, Strengths, and Professional Growth</h2>
+            <p>
+                Completing my coursework and assembling this ePortfolio has profoundly shaped my professional identity, helping me bridge theoretical concepts with real-world application. Throughout the program, I have cultivated a versatile skill set spanning software development across C++, Java, Python, x86-64 assembly, and SQL.
+            </p>
+
+            <p>My professional goals center on building reliable, maintainable software and secure systems, underpinned by several core competencies:</p>
+
+            <ul>
+                <li><strong>Collaborating in a Team Environment & Communicating with Stakeholders:</strong> Software engineering is ultimately a collaborative effort. Throughout my coursework, such as simulating Agile Sprint Reviews and retrospectives for travel software projects, I learned how to align technical objectives with business requirements, coordinate team workflows, and articulate technical decisions clearly to diverse stakeholders.</li>
+                <li><strong>Data Structures and Algorithms:</strong> Optimizing application performance requires a deep understanding of runtime complexity. By designing and refactoring backend data structures, transitioning from basic linear lookups to thread-safe <code>ConcurrentHashMap</code> implementations, binary search trees, and custom hash tables, I have learned to balance RAM efficiency with O(1) lookup performance to ensure seamless scaling under heavy loads.</li>
+                <li><strong>Software Engineering and Databases:</strong> I approach software design with a focus on maintainability, scalability, and modular architecture. From designing object-oriented Java services using the Builder pattern and centralized validation utilities to establishing MongoDB database schemas, PyMongo CRUD modules, and interactive Plotly Dash web dashboards, I build applications structured for long-term growth and clean separation of concerns.</li>
+                <li><strong>Security:</strong> Security is foundational to modern software development. My studies have equipped me to implement robust defensive programming practices, ranging from SHA-256 checksum verification and HTTPS SSL/TLS configurations to XOR file encryption, OWASP dependency vulnerability suppression, and strict role-based access control.</li>
+            </ul>
+
+            <h2>Overview of ePortfolio Artifacts</h2>
+            <p>
+                The technical artifacts featured in this portfolio fit together to demonstrate the full range of my computer science talents, moving from core algorithmic logic to complex, secure backend architecture.
+            </p>
+            <p>
+                <strong>Project One</strong> highlights my ability to take foundational CRUD software and refactor it into a production-ready standard by implementing centralized validation, immutable Builder patterns, and thread-safe data structures[cite: 19]. Subsequent projects showcase my proficiency across full-stack development, mobile application design for Android, database architecture, machine learning implementations, and secure coding standards.
+            </p>
+            <p>
+                Together, these artifacts illustrate not only that my code functions, but that it is designed with scalability, security, and market readiness in mind. Thank you for taking the time to review my portfolio and explore my journey in computer science!
+            </p>
+
+            <a href="index.html" class="back-link">← Back to Home Overview</a>
+        </div>
+    </section>
+
+</body>
+</html>
