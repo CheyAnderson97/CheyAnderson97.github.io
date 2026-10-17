@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheyenne Anderson - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #232323;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navbar ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffffff;
+        }
+
+        /* Header Action Buttons */
+        .btn-nav-outline {
+            border: 2px solid #ffffff;
+            padding: 8px 18px;
+            border-radius: 3px;
+            color: #ffffff !important;
+        }
+
+        .btn-nav-filled {
+            background-color: #cbb280;
+            color: #232323 !important;
+            padding: 8px 18px;
+            border-radius: 3px;
+            font-weight: 700 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(40, 50, 60, 0.55), rgba(40, 50, 60, 0.55)), 
+                        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            color: #f0f0f0;
+            font-size: 1.25rem;
+            font-style: italic;
+            max-width: 800px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-hero-primary {
+            background-color: #cbb280;
+            color: #ffffff;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-hero-primary:hover {
+            background-color: #b59b68;
+        }
+
+        .btn-hero-secondary {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-hero-secondary:hover {
+            background-color: #ffffff;
+            color: #232323;
+        }
+
+        /* Scroll Down Arrow Indicator */
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.25);
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="logo">CHEYENNE ANDERSON</div>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects.html" class="btn-nav-outline">View Code</a></li>
+            <li><a href="#contact" class="btn-nav-filled">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <h1>PORTFOLIO OVERVIEW</h1>
+        <p>
+            Welcome to my computer science ePortfolio showcasing software engineering,
+            data structures, database architecture, and security enhancements.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="projects.html" class="btn-hero-primary">VIEW CODING PROJECTS</a>
+            <a href="https://github.com/CheyAnderson97" target="_blank" class="btn-hero-secondary">GITHUB PROFILE</a>
+        </div>
+
+        <a href="projects.html" class="scroll-down">▼</a>
+    </section>
+
+</body>
+</html>
