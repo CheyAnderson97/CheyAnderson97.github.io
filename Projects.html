@@ -5,22 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Projects - Cheyenne Anderson</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            padding: 40px;
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1a1a1a; color: #ffffff; padding-top: 100px; padding-bottom: 60px; line-height: 1.6; }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background-color: #232323; display: flex; justify-content: space-between;
+            align-items: center; padding: 15px 40px; z-index: 1000;
+            border-bottom: 1px solid #333333;
         }
-        a { color: #cbb280; }
-        .container { max-width: 900px; margin: 0 auto; }
-        h1 { border-bottom: 2px solid #cbb280; padding-bottom: 10px; }
+        .navbar .logo { color: #ffffff; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; }
+        .navbar ul { display: flex; list-style: none; align-items: center; gap: 20px; }
+        .navbar ul li a {
+            color: #cccccc; text-decoration: none; font-size: 0.9rem;
+            font-weight: 600; text-transform: uppercase; transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover { color: #ffffff; }
+
+        .btn-nav-first {
+            background-color: #cbb280; color: #232323 !important;
+            padding: 8px 18px; border-radius: 3px; font-weight: 700 !important;
+        }
+        .btn-nav-outline {
+            border: 2px solid #ffffff; padding: 8px 18px; border-radius: 3px; color: #ffffff !important;
+        }
+
+        /* Container & Cards */
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+        h1 { color: #ffffff; border-bottom: 2px solid #cbb280; padding-bottom: 10px; margin-bottom: 30px; font-size: 2.2rem; text-transform: uppercase; }
+        .project-card { background-color: #262626; border-radius: 6px; padding: 25px; margin-bottom: 25px; border-left: 5px solid #cbb280; }
+        .project-card h2 { color: #cbb280; margin-bottom: 10px; }
+        .meta { font-size: 0.9rem; color: #aaaaaa; margin-bottom: 15px; }
+        p { margin-bottom: 15px; color: #dddddd; }
+        ul { margin-left: 20px; margin-bottom: 15px; color: #cccccc; }
+        li { margin-bottom: 5px; }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        .btn { display: inline-block; background-color: #cbb280; color: #1a1a1a; padding: 10px 20px; text-decoration: none; font-weight: 700; border-radius: 3px; }
+        .btn:hover { background-color: #b59b68; }
+        .btn-secondary { display: inline-block; border: 1px solid #ffffff; color: #ffffff; padding: 10px 20px; text-decoration: none; font-weight: 600; border-radius: 3px; }
+        .btn-secondary:hover { background-color: #ffffff; color: #1a1a1a; }
+        .back-link { display: inline-block; margin-top: 20px; color: #cbb280; text-decoration: none; font-weight: 600; }
     </style>
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="logo">CHEYENNE ANDERSON</div>
+        <ul>
+            <li><a href="about.html" class="btn-nav-first">About Me</a></li>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://github.com/CheyAnderson97" target="_blank" class="btn-nav-outline">View Code</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Coding Projects</h1>
-        <p>Project details and source files will be displayed here soon.</p>
-        <p><a href="index.html">← Back to Home</a></p>
+        <h1>Coding Projects & ePortfolio Artifacts</h1>
+
+        <!-- Project One Card -->
+        <div class="project-card">
+            <h2>Project One: Software Testing, Automation & Refactoring</h2>
+            <div class="meta"><strong>Original Course:</strong> CS 320 | <strong>Enhancements:</strong> Builder Pattern, Centralized Validation, ConcurrentHashMap ($O(1)$ Lookups)</div>
+            <p>
+                <strong>Artifact Overview:</strong> Originally developed as a CRUD appointment, contact, and task management system with JUnit tests. 
+                Refactored for the Capstone ePortfolio to eliminate architectural bottlenecks, guarantee immutability, and introduce thread-safe memory management.
+            </p>
+            <p><strong>Key Enhancements Implemented:</strong></p>
+            <ul>
+                <li><strong>Centralized Validation:</strong> Replaced repeated validation checks with a dedicated validation utility module.</li>
+                <li><strong>Builder Pattern:</strong> Streamlined object instantiation and enforced thread safety.</li>
+                <li><strong>Algorithmic Optimization:</strong> Migrated linear search structures to thread-safe <code>ConcurrentHashMap</code> for $O(1)$ lookup performance.</li>
+                <li><strong>Expanded Unit Testing:</strong> Refactored JUnit 5 suites to support exception handling and maintain rigorous code coverage.</li>
+            </ul>
+            <div class="btn-group">
+                <a href="https://github.com/CheyAnderson97/CheyAnderson97.github.io/tree/main/projects/project-one" target="_blank" class="btn">View Source Code on GitHub</a>
+                <a href="https://github.com/CheyAnderson97" target="_blank" class="btn-secondary">All GitHub Repositories</a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home Overview</a>
     </div>
+
 </body>
 </html>
